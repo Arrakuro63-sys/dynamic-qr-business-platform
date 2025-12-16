@@ -28,6 +28,7 @@ app.use("/api/analytics", analyticsRouter);
 app.use("/api/public", publicRouter);
 
 const PORT = process.env.PORT || 4000;
+// Render free plan uses PORT env var, defaults to 10000
 
 app.listen(PORT, () => {
   console.log(`Backend listening on http://localhost:${PORT}`);
